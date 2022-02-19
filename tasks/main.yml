@@ -1,0 +1,10 @@
+---
+# add_zypper_repository/tasks/main.yml
+
+- name: "Create the file in /etc/zypp/repos.d/{{ repository_name }}.repo"
+  template:
+    src: 'repo.j2'
+    dest: "/etc/zypp/repos.d/{{ repository_name }}.repo"
+    owner: 'root'
+    group: 'root'
+    mode: '0644'
