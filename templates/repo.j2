@@ -4,3 +4,6 @@ autorefresh={{ autorefresh_enabled }}
 baseurl={{ repository_baseurl }}
 type=rpm-md
 priority={{ priority }}
+{% if keeppackages is defined %}
+keeppackages={{ keeppackages }}
+{% endif %}
