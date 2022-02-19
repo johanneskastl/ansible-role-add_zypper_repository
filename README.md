@@ -16,6 +16,7 @@ Role Variables
 - `repository_enabled`: (optional) in case you want to add the repository, but disable it, set this to `0`
 - `autorefresh_enabled`: (optional) in case you want to disable autorefresh of the repository, set this to `0`
 - `priority`: (optional) per default, the priority is set to `99`
+- `gpgcheck`: (optional) per default, gpg checks are enabled, but can be disabled by setting this to `0`
 - `keeppackages`: (optional) in case you want to disable the `keeppackages` option, set this to `0`
 
 Dependencies
