@@ -4,3 +4,4 @@
 repository_enabled: '1'
 autorefresh_enabled: '1'
 priority: '99'
+gpgcheck: '1'
