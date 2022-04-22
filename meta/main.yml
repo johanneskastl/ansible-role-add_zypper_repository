@@ -1,5 +1,6 @@
 galaxy_info:
   role_name: 'add_zypper_repository'
+  namespace: 'johanneskastl'
   author: 'Johannes Kastl'
   description: 'Add a zypper repository'
   company: 'B1 Systems GmbH'
