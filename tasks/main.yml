@@ -5,37 +5,37 @@
 # compatibility with older versions
 #
 - name: 'set fact for enabling the repository'
-  set_fact:
+  ansible.builtin.set_fact:
     compat_repository_enabled: 'yes'
   when:
     - 'repository_enabled == "1"'
 
 - name: 'set fact for disabling the repository'
-  set_fact:
+  ansible.builtin.set_fact:
     compat_repository_enabled: 'no'
   when:
     - 'repository_enabled == "0"'
 
 - name: 'set fact for enabling autorefresh'
-  set_fact:
+  ansible.builtin.set_fact:
     compat_autorefresh_enabled: 'yes'
   when:
     - 'autorefresh_enabled == "1"'
 
 - name: 'set fact for disabling autorefresh'
-  set_fact:
+  ansible.builtin.set_fact:
     compat_autorefresh_enabled: 'no'
   when:
     - 'autorefresh_enabled == "0"'
 
 - name: 'set fact for not disabling gpgcheck'
-  set_fact:
+  ansible.builtin.set_fact:
     compat_gpgcheck_disabled: 'no'
   when:
     - 'gpgcheck == "1"'
 
 - name: 'set fact for disabling gpgcheck'
-  set_fact:
+  ansible.builtin.set_fact:
     compat_gpgcheck_disabled: 'yes'
   when:
     - 'gpgcheck == "0"'
