@@ -1,3 +1,5 @@
+![Ansible Lint](https://github.com/johanneskastl/ansible-role-add_zypper_repository/workflows/Ansible%20Lint/badge.svg)
+
 add_zypper_repository
 =========
 
