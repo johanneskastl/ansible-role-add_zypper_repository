@@ -53,3 +53,4 @@
     runrefresh: 'yes'
     priority: "{{ priority }}"
     disable_gpg_check: "{{ compat_gpgcheck_disabled }}"
+    auto_import_keys: "{{ auto_import_keys }}"
