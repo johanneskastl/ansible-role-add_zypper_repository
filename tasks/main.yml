@@ -44,7 +44,7 @@
 #
 #
 - name: "Add the zypper repository {{ repository_name }}"
-  ansible.builtin.zypper_repository:
+  community.general.zypper_repository:
     repo: "{{ repository_baseurl }}"
     name: "{{ repository_name }}"
     enabled: "{{ compat_repository_enabled }}"
